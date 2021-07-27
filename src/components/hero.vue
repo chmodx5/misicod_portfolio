@@ -21,7 +21,7 @@
               finalist mechatrionics engineering student and hardworking
               individual who loves football
             </p>
-            <p><v-btn c large> contact me</v-btn></p>
+            <p><v-btn to="/contact" large> contact me</v-btn></p>
           </v-container>
         </div>
       </v-overlay>
