@@ -1,6 +1,9 @@
 <template>
   <v-card outlined hover rounded="lg">
-    <v-img :aspect-ratio="16 / 9" :src="image"></v-img>
+    <v-img
+      :src="require(`@/assets/work/${image}`)"
+      :aspect-ratio="16 / 9"
+    ></v-img>
 
     <v-card-title class="text-capitalize mb-4"> {{ title }} </v-card-title>
 
