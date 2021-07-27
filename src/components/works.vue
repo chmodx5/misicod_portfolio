@@ -1,7 +1,14 @@
 <template>
   <default-section title="works">
     <v-row>
-      <v-col class="d-flex" md="6" v-for="(work, k) in works" :key="k">
+      <v-col
+        class="d-flex"
+        cols="12"
+        sm="6"
+        md="6"
+        v-for="(work, k) in works"
+        :key="k"
+      >
         <work-card
           class="flex-grow-1"
           :desc="work.desc"

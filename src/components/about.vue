@@ -1,7 +1,7 @@
 <template>
   <default-section title="about">
     <v-row>
-      <v-col md="6">
+      <v-col cols="12" md="6">
         <div>
           <p>
             I'm a great fan of football, well thats a comment you wouldn't want
