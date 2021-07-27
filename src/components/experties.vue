@@ -1,5 +1,5 @@
 <template>
-  <default-section title="my experties">
+  <default-section title="my expertise">
     <v-row>
       <v-col
         class="d-flex"
