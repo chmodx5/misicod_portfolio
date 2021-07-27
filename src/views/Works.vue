@@ -1,5 +1,5 @@
 <template>
-  <default-section title="works">
+  <pages-layout>
     <v-row>
       <v-col class="d-flex" md="6" v-for="(work, k) in works" :key="k">
         <work-card
@@ -11,16 +11,11 @@
         ></work-card>
       </v-col>
     </v-row>
-    <p class="text-center mt-10">
-      <v-btn outlined rounded color="primary" large to="/works"
-        >more works</v-btn
-      >
-    </p>
-  </default-section>
+  </pages-layout>
 </template>
 <script>
-import defaultSection from "./layout/defaultSection.vue";
-import workCard from "./single/workCard.vue";
+import pagesLayout from "@/components/layout/pagesLayout.vue";
+import workCard from "@/components//single/workCard.vue";
 export default {
   data: () => ({
     works: [
@@ -43,14 +38,32 @@ export default {
       },
       {
         image: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
-        title: "stepprt motor control usiing BLYK app",
+        title: "stepper motor control using BLYK app",
         desc: "Blynk is a platform that allows you to quickly build interfaces for controlling and monitoring your hardware projects from your iOS and Android device. After downloading the Blynk app, you can create a project dashboard and arrange buttons, sliders, graphs, and other widgets onto the screen. ",
         link: "https://github.com/MisiCod/Stepper-control-from-the-phone",
+      },
+      {
+        image: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+        title: "voice controlled home appliances",
+        desc: "This is a project which is supposed to enable one to control home appliances by use of voice commands communicated to the Google Assistant, which then prompts the desired actions. In this case, we used voice commands to turn an LED on or/ and off.  ",
+        link: "https://github.com/MisiCod/Stepper-control-from-the-phone",
+      },
+      {
+        image: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+        title: "automated door system",
+        desc: "This project involves coming up with a proof-of-concept automatic door system that helps reduce coming into contact with contaminated surfaces, an example is, a door in a public place , most especially during this day and age of Covid-19.",
+        link: "https://github.com/wambui-pixel/Automatic-Door",
+      },
+      {
+        image: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+        title: "automated smoke detector",
+        desc: "This smoke detector project is a proof of concept that you can be able to capture and send data to the cloud from NodeMCU using the Blynk App. It detects smoke beyond a set threshold and sends a notification to the Blynk App",
+        link: "https://github.com/wambui-pixel/Smoke-detector",
       },
     ],
   }),
   components: {
-    defaultSection,
+    pagesLayout,
     workCard,
   },
 };

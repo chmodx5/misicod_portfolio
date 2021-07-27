@@ -1,6 +1,6 @@
 <template>
   <v-card rounded="lg" hover outlined class="pa-6">
-    <v-icon size="50" color="gray lighten-4"> {{ icon }} </v-icon>
+    <v-icon size="50" color="grey lighten-1"> {{ icon }} </v-icon>
     <br />
     <p class="text-capitalize font-weight-bold text-h5 mt-6">
       {{ title }}
@@ -8,7 +8,9 @@
     <p>
       {{ text }}
     </p>
-    <v-btn :to="link" text color="primary">{{ linktitle }}</v-btn>
+    <v-btn :href="link" target="_blank" text color="primary">{{
+      linktitle
+    }}</v-btn>
   </v-card>
 </template>
 <script>

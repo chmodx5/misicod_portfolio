@@ -1,10 +1,10 @@
 <template>
   <div>
-    <hero />
-    <experties />
-    <works />
-    <about />
-    <testimonial />
+    <hero id="hero" />
+    <experties id="experties" />
+    <works id="works" />
+    <about id="about" />
+    <testimonial class="text-center" id="testimonial" />
   </div>
 </template>
 
